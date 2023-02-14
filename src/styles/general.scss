@@ -1,5 +1,29 @@
 @font-face {
+  font-weight: 100;
+  font-family: HelveticaNeueCyr;
+  src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-UltraLight.ttf");
+}
+
+@font-face {
+  font-weight: 200;
+  font-family: HelveticaNeueCyr;
+  src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Thin.ttf");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: HelveticaNeueCyr;
+  src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.ttf");
+}
+
+@font-face {
   font-weight: 400;
+  font-family: HelveticaNeueCyr;
+  src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.ttf");
+}
+
+@font-face {
+  font-weight: 500;
   font-family: HelveticaNeueCyr;
   src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.ttf");
 }
@@ -10,14 +34,76 @@
   src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr Bold.ttf");
 }
 
+@font-face {
+  font-weight: 800;
+  font-family: HelveticaNeueCyr;
+  src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Heavy.ttf");
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: HelveticaNeueCyr;
+  src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr Black.ttf");
+}
+
 html {
   font-weight: 400;
   font-size: 16px;
   font-family: HelveticaNeueCyr, sans-serif;
-  // line-height: 1.295;
+  line-height: 1.5;
+  color: $bs-gray-600;
+}
+
+@mixin default-font {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: HelveticaNeueCyr, sans-serif;
+  line-height: 1.5;
   color: $bs-gray-600;
 }
 
 body {
   margin: 0;
+  min-height: 100vh;
 }
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+

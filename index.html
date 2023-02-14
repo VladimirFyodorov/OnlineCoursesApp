@@ -9,6 +9,49 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Hello</h1>
+  <input id="show-header" type="checkbox">
+  <label for="show-header" id="show-header-label"></label>
+  <header class="wrapper-container">
+    <div class="wrapper d-flex justify-between">
+      <h3 class="bold color-main">NSA</h3>
+      <nav class="d-flex">
+        <p class="color-secondary medium">Главная</p>
+        <p class="color-secondary medium">Мое обучение</p>
+        <p class="color-main bold">Бесплатно</p>
+        <p class="color-secondary medium">Статьи</p>
+        <p class="color-main bold login">Login</p>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="wrapper-container">
+      <div class="wrapper sub-header">
+        <h1 class="color-main">Бесплатные</h1>
+        <h1 class="color-main">онлайн курсы</h1>
+        <article class="search d-flex flex-wrap">
+          <input id="input-search" placeholder="Поиск">
+          <select id="select-feild" default="Направление">
+            <option value="" selected>Направление</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+          <select id="select-difficulty">
+            <option value="" selected>Уровень</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+          <select id="select-duration">
+            <option value="" selected>Длительность</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </article>
+      </div>
+    </section>
+    <section class="wrapper-container">
+      <div class="wrapper content">
+      </div>
+    </section>
+  </main>
 </body>
 </html>

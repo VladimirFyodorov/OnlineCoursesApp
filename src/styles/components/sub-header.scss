@@ -1,0 +1,51 @@
+@mixin search-paddings {
+  padding: 0.5rem 1.25rem;
+}
+
+.sub-header {
+  padding: 3.5rem 0 2.5rem;
+
+  h1 {
+    &:nth-of-type(1) {
+      font-weight: 700;
+    }
+
+    &:nth-of-type(2) {
+      font-weight: 300;
+    }
+  }
+
+  .search {
+    padding: 1.5rem 0;
+    gap: 2rem;
+
+    input {
+      @include border-light;
+      @include search-paddings;
+      @include default-font;
+      flex-grow: 1;
+    }
+
+    select {
+      @include border-light;
+      @include search-paddings;
+      @include default-font;
+
+      option {
+        @include default-font;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    h1 {
+      &:nth-of-type(1) {
+        font-weight: 300;
+      }
+  
+      &:nth-of-type(2) {
+        font-weight: 700;
+      }
+    }
+  }
+}
