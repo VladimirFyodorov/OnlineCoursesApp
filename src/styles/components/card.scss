@@ -1,0 +1,57 @@
+@mixin card-info {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: 4px;
+
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+
+  width: 20px;
+  height: 20px;
+
+  margin-right: 0.5rem;
+}
+
+.card {
+  width: 350px;
+  margin-bottom: 4rem;
+
+  .img {
+    height: 400px;
+    @include border-main;
+    margin-bottom: 1.5rem;
+  }
+
+  &-info {
+    gap: 1.5rem;
+
+    p {
+      margin: 0 0 2rem;
+    }
+
+    &-1::before {
+      @include card-info();
+      background-image: url('/src/icons/icons8-календарь-100.png');
+    }
+
+    &-2::before {
+      @include card-info();
+      background-image: url('/src/icons/icons8-часы.svg');
+    }
+  }
+
+  &-btn {
+    @include border-main-double;
+    padding: 0.5rem 2.5rem;
+    background-color: $bg-white;
+
+    @include default-font;
+    font-weight: 500;
+    color: $bs-gray-900;
+  }
+
+  @media (max-width: $media-max-width-phone) {
+    width: 100%;
+  }
+}

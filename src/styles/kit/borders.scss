@@ -2,3 +2,13 @@
   border: 1px solid $bs-gray-400;
   border-radius: 20px;
 }
+
+@mixin border-main {
+  border: 1px solid $bs-gray-900;
+  border-radius: 20px;
+}
+
+@mixin border-main-double {
+  border: 2px solid $bs-gray-900;
+  border-radius: 20px;
+}
