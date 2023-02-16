@@ -1,0 +1,30 @@
+footer {
+  background-color: $bg-black;
+  padding-top: 1.5rem;
+
+  h1, h2 {
+    color: $bg-white;
+  }
+
+  .footer-info {
+    padding-top: 1.5rem;
+    column-count: 2;
+    column-gap: 3rem;
+    color: $footer-gray;
+
+    h4 {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+
+    .signature {
+      margin-top: 2rem;
+    }
+  }
+}

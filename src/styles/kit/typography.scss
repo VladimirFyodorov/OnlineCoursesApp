@@ -13,3 +13,28 @@
 .bold {
   font-weight: 700;
 }
+
+.avoid-break {
+  break-inside: avoid;
+}
+
+.escape-columns {
+  column-span: all;
+}
+
+.super-big {
+  font-size: 400px;
+  line-height: 1;
+
+  @media (max-width: 850px) {
+    font-size: 300px;
+  }
+
+  @media (max-width: 650px) {
+    font-size: 200px;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 150px;
+  }
+}
